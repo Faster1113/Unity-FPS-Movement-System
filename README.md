@@ -60,7 +60,7 @@ Lightweight HP manager with event-driven damage/death callbacks for easy UI inte
 For the weapon sway, recoil, and ADS systems to work correctly, organize your player prefab as follows:
 
 ```text
-Player (AdvancedPlayerController)
+Player (PlayerController)
 └── CameraHolder (Transform for mouse look)
     └── Main Camera (PlayerCamera script)
         └── WeaponSafety
