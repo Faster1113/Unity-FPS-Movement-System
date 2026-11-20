@@ -55,6 +55,22 @@ Lightweight HP manager with event-driven damage/death callbacks for easy UI inte
     -   Assign `Camera Holder` → The `CameraHolder` Transform (required for mouse look).
     -   Configure movement speeds, gravity, and keybindings in the nested Config structs.
 7.  For weapons, add `WeaponSystem` to your weapon prefab and link the main camera + muzzle point.
+## 📂 Recommended Hierarchy
+
+For the weapon sway, recoil, and ADS systems to work correctly, organize your player prefab as follows:
+
+```text
+Player (AdvancedPlayerController)
+└── CameraHolder (Transform for mouse look)
+    └── Main Camera (PlayerCamera script)
+        └── WeaponSafety
+            └── WeaponPivot (Moves for ADS/Aim Down Sights)
+                └── MouseSwayPivot (Tilts with mouse movement)
+                    └── SwayPivot (Bobs while walking/running)
+                        └── JumpSwayPivot (Reacts to jumping/landing)
+                            └── [Your Weapon Model]
+<img width="294" height="188" alt="image" src="https://github.com/user-attachments/assets/934e2e1b-e5b1-4a2b-bf8c-42d915551a03" />
+
 
 ## 🏗️ Architecture Highlights
 
