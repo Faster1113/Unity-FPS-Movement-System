@@ -69,7 +69,6 @@ Player (AdvancedPlayerController)
                     └── SwayPivot (Bobs while walking/running)
                         └── JumpSwayPivot (Reacts to jumping/landing)
                             └── [Your Weapon Model]
-<img width="294" height="188" alt="image" src="https://github.com/user-attachments/assets/934e2e1b-e5b1-4a2b-bf8c-42d915551a03" />
 
 
 ## 🏗️ Architecture Highlights
