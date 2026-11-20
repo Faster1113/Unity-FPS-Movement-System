@@ -70,7 +70,6 @@ Player (AdvancedPlayerController)
                         └── JumpSwayPivot (Reacts to jumping/landing)
                             └── [Your Weapon Model]
 
-
 ## 🏗️ Architecture Highlights
 
 This framework is designed to be extended without modifying core code:
