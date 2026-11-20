@@ -68,7 +68,8 @@ Player (AdvancedPlayerController)
                 └── MouseSwayPivot (Tilts with mouse movement)
                     └── SwayPivot (Bobs while walking/running)
                         └── JumpSwayPivot (Reacts to jumping/landing)
-                            └── [Your Weapon Model]
+                            └── [Your Weapon Model]///
+
 
 ## 🏗️ Architecture Highlights
 
